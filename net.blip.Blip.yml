@@ -39,22 +39,22 @@ modules:
       - rm -rf $FLATPAK_DEST/share/icons/hicolor/1024x1024  # max. size 512x512
     sources:
       - type: archive
-        url: https://static.blip.net/linux/blip-1.2.4-linux-amd64.tar.gz
-        sha256: 9402ebb9ebed1fe65bc75982804594f2ab4e61b02c4398d045d0d52a4e71a4f8
+        url: https://static.blip.net/linux/blip-1.2.6-linux-amd64.tar.gz
+        sha256: a88a700e77d58988dc3b1f9ebd38c65782140187a1f17f6a1281b4ab43f5f3df
         only-arches: [x86_64]
         x-checker-data:
           type: json
           url: https://static.blip.net/linux/latest.json
           version-query: .version
-          url-query: '.files["linux-amd64"].url'
+          url-query: .files["linux-amd64"].url
           is-main-source: true
       - type: archive
-        url: https://static.blip.net/linux/blip-1.2.4-linux-aarch64.tar.gz
-        sha256: 82f41dffce87a927a0e7b5b3d88b6213549ec6d904061254922fc625744a030d
+        url: https://static.blip.net/linux/blip-1.2.6-linux-aarch64.tar.gz
+        sha256: 0147913600e0b63ab20a39973fc572536a903bbc6f8ee60877a04ea2216eba32
         only-arches: [aarch64]
         x-checker-data:
           type: json
           url: https://static.blip.net/linux/latest.json
           version-query: .version
-          url-query: '.files["linux-aarch64"].url'
+          url-query: .files["linux-aarch64"].url
           is-main-source: false
