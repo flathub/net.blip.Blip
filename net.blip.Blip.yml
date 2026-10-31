@@ -39,8 +39,8 @@ modules:
       - rm -rf $FLATPAK_DEST/share/icons/hicolor/1024x1024  # max. size 512x512
     sources:
       - type: archive
-        url: https://static.blip.net/linux/blip-1.2.7-linux-amd64.tar.gz
-        sha256: 649e007a099580e5297b9a64aa5e86396207c1e49747b36f8cd0d5df3254f295
+        url: https://static.blip.net/linux/blip-1.2.8-linux-amd64.tar.gz
+        sha256: 59fd1020f7f193aae4373f45f39bf39e9e3337bf0af6ede91bdb1c8e4c1ac463
         only-arches: [x86_64]
         x-checker-data:
           type: json
@@ -49,8 +49,8 @@ modules:
           url-query: .files["linux-amd64"].url
           is-main-source: true
       - type: archive
-        url: https://static.blip.net/linux/blip-1.2.7-linux-aarch64.tar.gz
-        sha256: 5f91e68f19527c56b519469cb05fb1c02c4d97fbfb4071a3c692db4ee94430b6
+        url: https://static.blip.net/linux/blip-1.2.8-linux-aarch64.tar.gz
+        sha256: 7e9fb6607435cebcd9c1f54e1b94a18e9eaed79031cf1b4b79fbfca4793f6ec8
         only-arches: [aarch64]
         x-checker-data:
           type: json
